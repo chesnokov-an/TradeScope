@@ -1,0 +1,112 @@
+wilder1978:
+  type: book
+  title: New Concepts in Technical Trading Systems
+  author: Wilder, J. Welles
+  date: 1978
+  publisher: Trend Research
+  location: Greensboro
+
+murphy1999:
+  type: book
+  title: Technical Analysis of the Financial Markets
+  author: Murphy, John J.
+  date: 1999
+  publisher: New York Institute of Finance
+  location: New York
+
+appel2005:
+  type: book
+  title: "Technical Analysis: Power Tools for Active Investors"
+  author: Appel, Gerald
+  date: 2005
+  publisher: FT Prentice Hall
+  location: Upper Saddle River
+
+sharpe1994:
+  type: article
+  title: The Sharpe Ratio
+  author: Sharpe, William F.
+  date: 1994
+  parent:
+    type: periodical
+    title: The Journal of Portfolio Management
+    volume: 21
+    issue: 1
+  page-range: 49-58
+
+magdonismail2004:
+  type: article
+  title: Maximum Drawdown
+  author:
+    - Magdon-Ismail, Malik
+    - Atiya, Amir F.
+  date: 2004
+  parent:
+    type: periodical
+    title: Risk
+    volume: 17
+    issue: 10
+  page-range: 99-102
+
+fama1970:
+  type: article
+  title: "Efficient Capital Markets: A Review of Theory and Empirical Work"
+  author: Fama, Eugene F.
+  date: 1970
+  parent:
+    type: periodical
+    title: The Journal of Finance
+    volume: 25
+    issue: 2
+  page-range: 383-417
+
+brock1992:
+  type: article
+  title: Simple Technical Trading Rules and the Stochastic Properties of Stock Returns
+  author:
+    - Brock, William
+    - Lakonishok, Josef
+    - LeBaron, Blake
+  date: 1992
+  parent:
+    type: periodical
+    title: The Journal of Finance
+    volume: 47
+    issue: 5
+  page-range: 1731-1764
+
+lo2000:
+  type: article
+  title: Foundations of Technical Analysis. Computational Algorithms, Statistical Inference, and Empirical Implementation
+  author:
+    - Lo, Andrew W.
+    - Mamaysky, Harry
+    - Wang, Jiang
+  date: 2000
+  parent:
+    type: periodical
+    title: The Journal of Finance
+    volume: 55
+    issue: 4
+  page-range: 1705-1765
+
+gospec:
+  type: web
+  title: The Go Programming Language Specification
+  author: The Go Authors
+  date: 2025
+  url: https://go.dev/ref/spec
+
+typstdocs:
+  type: web
+  title: Typst Documentation
+  author: Typst GmbH
+  date: 2025
+  url: https://typst.app/docs/
+
+yahoo:
+  type: web
+  title: "Yahoo Finance: Apple Inc. (AAPL) Historical Prices"
+  author: Yahoo Finance
+  date: 2026
+  url: https://finance.yahoo.com/quote/AAPL/history/

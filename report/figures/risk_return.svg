@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380">
+<rect width="100%" height="100%" fill="#ffffff"/><line x1="76.00" y1="322.00" x2="872.00" y2="322.00" stroke="#dbe3ec" stroke-width="1"/>
+<text x="67.00" y="322.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="end" dominant-baseline="middle">-41%</text>
+<line x1="76.00" y1="251.00" x2="872.00" y2="251.00" stroke="#dbe3ec" stroke-width="1"/>
+<text x="67.00" y="251.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="end" dominant-baseline="middle">36%</text>
+<line x1="76.00" y1="180.00" x2="872.00" y2="180.00" stroke="#dbe3ec" stroke-width="1"/>
+<text x="67.00" y="180.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="end" dominant-baseline="middle">114%</text>
+<line x1="76.00" y1="109.00" x2="872.00" y2="109.00" stroke="#dbe3ec" stroke-width="1"/>
+<text x="67.00" y="109.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="end" dominant-baseline="middle">192%</text>
+<line x1="76.00" y1="38.00" x2="872.00" y2="38.00" stroke="#dbe3ec" stroke-width="1"/>
+<text x="67.00" y="38.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="end" dominant-baseline="middle">269%</text>
+<text x="76.00" y="342.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="middle">0.0%</text>
+<text x="275.00" y="342.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="middle">8.3%</text>
+<text x="474.00" y="342.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="middle">16.6%</text>
+<text x="673.00" y="342.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="middle">25.0%</text>
+<text x="872.00" y="342.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#52606d" text-anchor="middle">33.3%</text>
+<line x1="76.00" y1="38.00" x2="76.00" y2="322.00" stroke="#8a94a6" stroke-width="1.2"/>
+<line x1="76.00" y1="322.00" x2="872.00" y2="322.00" stroke="#8a94a6" stroke-width="1.2"/>
+<text x="872.00" y="368.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" fill="#52606d" text-anchor="end">Макс. просадка, %</text>
+<text x="80.00" y="26.00" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" fill="#52606d">↑ Доходность, %</text>
+<circle cx="750.58" cy="107.35" r="7" fill="#0077b6" stroke="#ffffff" stroke-width="2"/>
+<text x="750.58" y="92.35" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#1f2933" text-anchor="middle">SMA (193.3%)</text>
+<circle cx="703.11" cy="224.58" r="7" fill="#e76f51" stroke="#ffffff" stroke-width="2"/>
+<text x="703.11" y="209.58" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#1f2933" text-anchor="middle">RSI (65.3%)</text>
+<circle cx="528.29" cy="75.59" r="7" fill="#6a4c93" stroke="#ffffff" stroke-width="2"/>
+<text x="528.29" y="60.59" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12" fill="#1f2933" text-anchor="middle">MACD (228.0%)</text>
+</svg>

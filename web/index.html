@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TradeScope — бэктестинг торговых стратегий</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>TradeScope</h1>
+      <p>Сравнение трёх торговых стратегий на исторических дневных данных</p>
+    </div>
+    <label class="file">
+      Загрузить CSV
+      <input type="file" id="file" accept=".csv,text/csv">
+    </label>
+  </header>
+
+  <main>
+    <section class="panel">
+      <p class="dataset" id="dataset">Загрузка демонстрационного набора…</p>
+
+      <div class="controls">
+        <label>Капитал, у.е.
+          <input id="capital" type="number" min="100" step="100" value="10000">
+        </label>
+        <label>Комиссия, %
+          <input id="commission" type="number" min="0" max="5" step="0.01" value="0.1">
+        </label>
+        <label>Проскальзывание, %
+          <input id="slippage" type="number" min="0" max="5" step="0.01" value="0.05">
+        </label>
+      </div>
+
+      <details>
+        <summary>Параметры стратегий</summary>
+        <div class="controls">
+          <label>SMA: короткая
+            <input id="smaShort" type="number" min="2" value="20">
+          </label>
+          <label>SMA: длинная
+            <input id="smaLong" type="number" min="3" value="50">
+          </label>
+          <label>RSI: период
+            <input id="rsiPeriod" type="number" min="2" value="14">
+          </label>
+          <label>RSI: перепроданность
+            <input id="rsiLow" type="number" min="1" max="49" value="30">
+          </label>
+          <label>RSI: перекупленность
+            <input id="rsiHigh" type="number" min="51" max="99" value="70">
+          </label>
+          <label>MACD: быстрая EMA
+            <input id="macdFast" type="number" min="2" value="12">
+          </label>
+          <label>MACD: медленная EMA
+            <input id="macdSlow" type="number" min="3" value="26">
+          </label>
+          <label>MACD: сигнальная EMA
+            <input id="macdSignal" type="number" min="2" value="9">
+          </label>
+        </div>
+      </details>
+
+      <div class="actions">
+        <button id="run" type="button">Запустить анализ</button>
+        <button id="reset" class="ghost" type="button">Демо-данные</button>
+        <span id="status" role="status"></span>
+      </div>
+    </section>
+
+    <section id="summary" class="cards hidden"></section>
+
+    <section id="results" class="panel hidden">
+      <h2>Сравнение стратегий</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Стратегия</th>
+              <th>Доходность</th>
+              <th>Просадка</th>
+              <th>Сделок</th>
+              <th>Прибыльных</th>
+              <th>Win Rate</th>
+              <th>Sharpe</th>
+              <th>Капитал</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+      </div>
+      <h2>Выводы</h2>
+      <ul id="conclusions"></ul>
+    </section>
+
+    <section id="charts" class="charts hidden">
+      <article class="panel">
+        <h2>Цена закрытия</h2>
+        <canvas id="priceChart" height="220"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Динамика капитала</h2>
+        <canvas id="equityChart" height="220"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Просадка</h2>
+        <canvas id="drawdownChart" height="220"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Итоговая доходность</h2>
+        <canvas id="returnsChart" height="220"></canvas>
+      </article>
+      <article class="panel wide">
+        <h2>Риск и доходность</h2>
+        <canvas id="riskChart" height="220"></canvas>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>TradeScope · учебный проект</span>
+    <span>Данные: Yahoo Finance, AAPL, 2019–2024</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

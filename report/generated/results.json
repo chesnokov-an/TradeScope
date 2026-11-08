@@ -1,0 +1,320 @@
+{
+  "generatedAt": "2026-11-09 01:47",
+  "dataset": {
+    "name": "AAPL — дневные свечи",
+    "source": "Yahoo Finance, AAPL, дневные свечи, 02.01.2019 — 31.12.2024, цены с поправкой на дробление акций",
+    "rows": 1510,
+    "start": "2019-01-02",
+    "end": "2024-12-31",
+    "stats": {
+      "minClose": 35.5475,
+      "maxClose": 259.02,
+      "meanClose": 137.0788046357615,
+      "meanDailyReturnPct": 0.14136760330266804,
+      "dailyStdDevPct": 1.943187232855465,
+      "annualVolatilityPct": 30.847141013827923,
+      "upDaysPct": 54.00927766732936,
+      "maxDailyGainPct": 11.980824235587972,
+      "maxDailyLossPct": -12.864697629240574,
+      "buyHoldMaxDrawdownPct": 31.427261613691925
+    }
+  },
+  "config": {
+    "initialCapital": 10000,
+    "commissionPct": 0.1,
+    "slippagePct": 0.05
+  },
+  "buyHoldReturnPct": 534.2958459979736,
+  "results": [
+    {
+      "key": "sma",
+      "name": "SMA Crossover",
+      "params": [
+        {
+          "name": "Короткий период",
+          "value": "20"
+        },
+        {
+          "name": "Длинный период",
+          "value": "50"
+        }
+      ],
+      "metrics": {
+        "initialCapital": 10000,
+        "finalEquity": 29334.39028033267,
+        "totalReturnPct": 193.34390280332673,
+        "maxDrawdownPct": 28.209585415777156,
+        "numberOfTrades": 16,
+        "winningTrades": 9,
+        "losingTrades": 7,
+        "winRatePct": 56.25,
+        "avgTradeReturnPct": 8.274752160581794,
+        "sharpeRatio": 0.9525752275775408
+      }
+    },
+    {
+      "key": "rsi",
+      "name": "RSI Mean Reversion",
+      "params": [
+        {
+          "name": "Период RSI",
+          "value": "14"
+        },
+        {
+          "name": "Перепроданность",
+          "value": "30"
+        },
+        {
+          "name": "Перекупленность",
+          "value": "70"
+        }
+      ],
+      "metrics": {
+        "initialCapital": 10000,
+        "finalEquity": 16532.944267605733,
+        "totalReturnPct": 65.32944267605734,
+        "maxDrawdownPct": 26.224573640056466,
+        "numberOfTrades": 6,
+        "winningTrades": 6,
+        "losingTrades": 0,
+        "winRatePct": 100,
+        "avgTradeReturnPct": 9.140905189030045,
+        "sharpeRatio": 0.5294783082019912
+      }
+    },
+    {
+      "key": "macd",
+      "name": "MACD",
+      "params": [
+        {
+          "name": "Быстрая EMA",
+          "value": "12"
+        },
+        {
+          "name": "Медленная EMA",
+          "value": "26"
+        },
+        {
+          "name": "Сигнальная EMA",
+          "value": "9"
+        }
+      ],
+      "metrics": {
+        "initialCapital": 10000,
+        "finalEquity": 32802.38279611783,
+        "totalReturnPct": 228.0238279611783,
+        "maxDrawdownPct": 18.914036723003793,
+        "numberOfTrades": 54,
+        "winningTrades": 28,
+        "losingTrades": 26,
+        "winRatePct": 51.85185185185185,
+        "avgTradeReturnPct": 2.4564604702361152,
+        "sharpeRatio": 1.167669580662232
+      }
+    }
+  ],
+  "comparison": {
+    "bestReturn": "MACD",
+    "lowestDrawdown": "MACD",
+    "mostTrades": "MACD",
+    "bestRiskAdjusted": "MACD",
+    "returnSpreadPct": 162.69438528512097,
+    "conclusions": [
+      "Наибольшую доходность показала стратегия MACD: 228,02 %.",
+      "Наименьшая максимальная просадка у стратегии MACD: 18,91 %.",
+      "Больше всего завершённых сделок у стратегии MACD: 54.",
+      "Разброс доходности между стратегиями — 162,69 п.п.",
+      "Лидер по доходности одновременно имеет наименьшую просадку."
+    ]
+  },
+  "stability": [
+    {
+      "label": "2019–2022",
+      "start": "2019-01-02",
+      "end": "2022-12-30",
+      "buyHoldPct": 229.1033434650456,
+      "results": [
+        {
+          "key": "sma",
+          "name": "SMA Crossover",
+          "params": [
+            {
+              "name": "Короткий период",
+              "value": "20"
+            },
+            {
+              "name": "Длинный период",
+              "value": "50"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 20425.534152994285,
+            "totalReturnPct": 104.25534152994285,
+            "maxDrawdownPct": 24.509678446243704,
+            "numberOfTrades": 11,
+            "winningTrades": 6,
+            "losingTrades": 5,
+            "winRatePct": 54.54545454545454,
+            "avgTradeReturnPct": 8.417057739042459,
+            "sharpeRatio": 0.8872833410664179
+          }
+        },
+        {
+          "key": "rsi",
+          "name": "RSI Mean Reversion",
+          "params": [
+            {
+              "name": "Период RSI",
+              "value": "14"
+            },
+            {
+              "name": "Перепроданность",
+              "value": "30"
+            },
+            {
+              "name": "Перекупленность",
+              "value": "70"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 13401.700810859322,
+            "totalReturnPct": 34.01700810859323,
+            "maxDrawdownPct": 26.224573640056466,
+            "numberOfTrades": 4,
+            "winningTrades": 3,
+            "losingTrades": 1,
+            "winRatePct": 75,
+            "avgTradeReturnPct": 8.570141668529327,
+            "sharpeRatio": 0.44589703866723274
+          }
+        },
+        {
+          "key": "macd",
+          "name": "MACD",
+          "params": [
+            {
+              "name": "Быстрая EMA",
+              "value": "12"
+            },
+            {
+              "name": "Медленная EMA",
+              "value": "26"
+            },
+            {
+              "name": "Сигнальная EMA",
+              "value": "9"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 24141.68075084725,
+            "totalReturnPct": 141.4168075084725,
+            "maxDrawdownPct": 18.914036723003793,
+            "numberOfTrades": 30,
+            "winningTrades": 18,
+            "losingTrades": 12,
+            "winRatePct": 60,
+            "avgTradeReturnPct": 3.300755693133659,
+            "sharpeRatio": 1.204843956764311
+          }
+        }
+      ]
+    },
+    {
+      "label": "2023–2024",
+      "start": "2023-01-03",
+      "end": "2024-12-31",
+      "buyHoldPct": 100.22387463020709,
+      "results": [
+        {
+          "key": "sma",
+          "name": "SMA Crossover",
+          "params": [
+            {
+              "name": "Короткий период",
+              "value": "20"
+            },
+            {
+              "name": "Длинный период",
+              "value": "50"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 12406.778613284921,
+            "totalReturnPct": 24.06778613284921,
+            "maxDrawdownPct": 11.7494250915595,
+            "numberOfTrades": 4,
+            "winningTrades": 2,
+            "losingTrades": 2,
+            "winRatePct": 50,
+            "avgTradeReturnPct": 6.013026614727024,
+            "sharpeRatio": 0.8793685840324198
+          }
+        },
+        {
+          "key": "rsi",
+          "name": "RSI Mean Reversion",
+          "params": [
+            {
+              "name": "Период RSI",
+              "value": "14"
+            },
+            {
+              "name": "Перепроданность",
+              "value": "30"
+            },
+            {
+              "name": "Перекупленность",
+              "value": "70"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 10828.043276461322,
+            "totalReturnPct": 8.28043276461321,
+            "maxDrawdownPct": 15.46264986166615,
+            "numberOfTrades": 2,
+            "winningTrades": 2,
+            "losingTrades": 0,
+            "winRatePct": 100,
+            "avgTradeReturnPct": 4.06103618953065,
+            "sharpeRatio": 0.38693968094943465
+          }
+        },
+        {
+          "key": "macd",
+          "name": "MACD",
+          "params": [
+            {
+              "name": "Быстрая EMA",
+              "value": "12"
+            },
+            {
+              "name": "Медленная EMA",
+              "value": "26"
+            },
+            {
+              "name": "Сигнальная EMA",
+              "value": "9"
+            }
+          ],
+          "metrics": {
+            "initialCapital": 10000,
+            "finalEquity": 12192.897733366352,
+            "totalReturnPct": 21.928977333663525,
+            "maxDrawdownPct": 11.908067562926966,
+            "numberOfTrades": 21,
+            "winningTrades": 9,
+            "losingTrades": 12,
+            "winRatePct": 42.857142857142854,
+            "avgTradeReturnPct": 1.0438909982090094,
+            "sharpeRatio": 0.7967622046142467
+          }
+        }
+      ]
+    }
+  ]
+}
