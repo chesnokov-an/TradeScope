@@ -82,11 +82,9 @@
 
 * Go-монолит без внешних зависимостей.
 * `cmd/server` — HTTP и статика; `cmd/experiment` — расчёты для отчёта.
-* `internal/tradescope` — CSV, стратегии, бэктест, метрики.
-* `web` — HTML, CSS, JS и пять графиков на Canvas.
-* `POST /api/backtest`; пустой `csv` → демонстрационный набор.
+* `internal/tradescope` — CSV, стратегии, бэктест, метрики; `web` — интерфейс и Canvas.
 
-`Клиент → HTTP → cmd/server → internal/tradescope → JSON → Canvas`
+![Архитектура TradeScope](../report/figures/architecture.svg)
 
 ---
 
