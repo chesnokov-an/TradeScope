@@ -4,7 +4,7 @@
 #show: report.with(
   subjName: "ЛОГИЧЕСКИЕ ОСНОВЫ СИСТЕМ СПЕЦИАЛЬНОГО НАЗНАЧЕНИЯ С ЭЛЕМЕНТАМИ СИСТЕМНОГО АНАЛИЗА",
   semNum: "5",
-  theme: "Исследование алгоритмических торговых стратегий на основе анализа временных рядов и их визуализация",
+  theme: "Анализ специальных торговых стратегий",
   student: "Чесноков Александр Николаевич",
   studentInitials: "Чесноков А. Н.",
   group: "С24-501",
@@ -33,8 +33,17 @@
 
 #pagebreak()
 #heading(numbering: none, outlined: true)[СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ]
+
+#show bibliography: it => {
+  show grid.cell.where(x: 0): cell => {
+    show regex("\[(\d+)\]"): s => s.text.slice(1, -1) + "."
+    cell
+  }
+  it
+}
+
 #bibliography("bibliography.yml", style: "ieee", title: none)
 
 #pagebreak()
-#heading(numbering: none, outlined: true)[ПРИЛОЖЕНИЕ А. ОСНОВНЫЕ ФРАГМЕНТЫ ИСХОДНОГО КОДА]
+#heading(numbering: none, outlined: true)[ПРИЛОЖЕНИЕ. ОСНОВНЫЕ ФРАГМЕНТЫ ИСХОДНОГО КОДА]
 #include "chapters/05_appendix.typ"
